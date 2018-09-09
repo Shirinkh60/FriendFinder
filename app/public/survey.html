@@ -21,7 +21,7 @@
 
 	<!-- Compiled and minified Materialize JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-
+	
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -36,7 +36,7 @@
 						<a href="survey.html">Survey</a>
 					</li>
 					<li>
-						<a href="api.friends">API Friends List</a>
+						<a href="/api/friendsArray">API Friends List</a>
 					</li>
 					<li>
 						<a href="https://github.com/Shirinkh60/FriendFinder">GitHub Repo</a>
@@ -64,12 +64,12 @@
 						<h5>
 							<strong>Name (Required)</strong>
 						</h5>
-						<input type="text" id="name" class="form-control" required>
+						<input type="text" id="userName" class="form-control" required>
 
 						<h5>
 							<strong>Link to Photo Image (Required)</strong>
 						</h5>
-						<input type="text" id="photo" class="form-control" required>
+						<input type="text" id="userPhoto" class="form-control" required>
 
 
 
@@ -318,7 +318,7 @@
 			};
 			// console.log('userInput = ' + JSON.stringify(userInput));
 			// Add user inputs to friends list
-			$.post("/api/friends", userInput, function (data) {
+			$.post("/api/friendsArray", userInput, function (data) {
 				// console.log('response = ' + JSON.stringify(data));
 				// Set the name and image values of friend match
 				$('#userMatch').html(data.matchName);
