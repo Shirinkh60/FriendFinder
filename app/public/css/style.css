@@ -1,0 +1,70 @@
+body {
+  
+   margin: 0px auto; 
+
+
+  
+   flex-direction: column;
+}
+
+header {
+
+    height: 100px;
+}
+
+header > nav {
+    height: 100%;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+main h1 {
+    font-weight: bold;
+}
+
+ main h2 {
+    font-weight: 300;
+}
+
+#logo-icon {
+   margin-left: 50px;
+   margin-top: 20px;
+}
+
+#logo {
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+#head-nav-links {
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.mainpanel{
+   margin: 50px;
+   width: 100%;
+}
+
+#mainpanel-content {
+    margin: 20px;
+    font-weight: bold;
+  
+}
+#submitButton{ 
+    margin: 10px;
+    width: 100%;
+}
+footer{
+   height: 150px;
+    width: 100%;
+   
+}
+.page-footer {
+    text-align: center;
+    font-weight: bold;
+    color: azure;
+    margin-top:10ex;
+}
